@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body{
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+<script src="./js/scripts.js" type="module"></script>
+
+
+
+
+
+  <!-- <canvas id="myCanvas"></canvas> -->
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="http://www.yanhuangxueyuan.com/versions/threejsR92/examples/js/loaders/FBXLoader.js"></script>
+  <script src="http://www.yanhuangxueyuan.com/versions/threejsR92/examples/js/libs/inflate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.122.0/examples/js/controls/OrbitControls.min.js"></script> -->
+
+
+  <!-- <script>
+    window.addEventListener('load', init);
+
+    init();
+
+    function init() {
+      const width = 960;
+      const height = 540;
+
+      const renderer = new THREE.WebGLRenderer({
+        canvas: document.querySelector('#myCanvas')
+      });
+
+      renderer.setSize(width, height);
+
+      const scene = new THREE.Scene();
+      const light = new THREE.AmbientLight(0x404040);
+      scene.add(light);
+
+      const loader = new THREE.FBXLoader();
+
+      loader.load("./fbx_obj/fbx/fbxEva.fbx", function(object) {
+        scene.add(object);
+      });
+
+      const camera = new THREE.PerspectiveCamera(45, width / height);
+      camera.position.set(0, 200, 100);
+
+      const plane = new THREE.Mesh(new THREE.PlaneBufferGeometry(200, 200), new THREE.MeshPhongMaterial({
+        color: 0xff0000,
+        side: THREE.DoubleSide
+      }));
+      plane.rotation.x = -Math.PI / 2;
+      scene.add(plane);
+
+      let controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.update();
+
+      document.body.appendChild(renderer.domElement);
+      tick();
+
+      function tick() {
+        requestAnimationFrame(tick);
+        renderer.render(scene, camera);
+      }
+    }
+  </script> -->
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.122.0/build/three.min.js"></script>-->
+
+  <!-- <script src="HTML_video_example/ac_quicktime.js" language="JavaScript" type="text/javascript"></script> -->
+
+  <!-- <script src="http://www.apple.com/library/quicktime/scripts/ac_quicktime.js" type="text/JavaScript"></script>
+
+  <script src="http://www.apple.com/library/quicktime/scripts/qtp_library.js" type="text/JavaScript"></script> -->
+
+  <!-- <script>
+    QT_WriteOBJECT_XHTML('./fbx_obj/fbx/fbxEva.fbx', '800', '600', '',
+      'autoplay', 'true',
+      'emb#bgcolor', 'black',
+      'align', 'middle');
+  </script> -->
+  <!-- <script defer>
+    // import { OrbitControls } from "https://threejs.org/examples/jsm/controls/OrbitControls.js";
+
+
+    var loader = new THREE.FBXLoader(); // Crea un cargador FBX
+    loader.load("./fbx_obj/fbx/fbxEva.fbx", function(obj) {
+      // console.log (obj); // Ver el objeto modelo devuelto después de cargar
+      scene.add(obj)
+      // Traducir correctamente la posición del modelo fbx
+      obj.translateY(-80);
+
+      // Puedes imprimir el objeto obj en la consola y encontrar el atributo de animaciones
+      console.log(obj)
+      // Ver datos de animación 2 objetos de clip AnimationClip, uno con animación de fotogramas clave, otro sin
+      console.log(obj.animations)
+    })
+
+    // window.addEventListener('load', init);
+
+    // init();
+
+    // function init() {
+    //   const width = 960;
+    //   const height = 540;
+
+    //   const renderer = new THREE.WebGLRenderer({
+    //     canvas: document.querySelector('#myCanvas')
+    //   });
+
+    //   renderer.setSize(width, height);
+
+    //   const scene = new THREE.Scene();
+    //   const light = new THREE.AmbientLight(0x404040);
+    //   scene.add(light);
+
+    //   const loader = new THREE.FBXLoader();
+
+    //   loader.load("./fbx_obj/fbx/fbxEva.fbx", function(object) {
+    //     scene.add(object);
+    //   });
+
+    //   const camera = new THREE.PerspectiveCamera(45, width / height);
+    //   camera.position.set(0, 200, 100);
+
+    //   const plane = new THREE.Mesh(new THREE.PlaneBufferGeometry(200, 200), new THREE.MeshPhongMaterial({
+    //     color: 0xff0000,
+    //     side: THREE.DoubleSide
+    //   }));
+    //   plane.rotation.x = -Math.PI / 2;
+    //   scene.add(plane);
+
+    //   let controls = new THREE.OrbitControls(camera, renderer.domElement);
+    //   controls.update();
+
+    //   document.body.appendChild(renderer.domElement);
+    //   tick();
+
+    //   function tick() {
+    //     requestAnimationFrame(tick);
+    //     renderer.render(scene, camera);
+    //   }
+    // }
+  </script> -->
+
+  <!-- <script>
+    var loader = new THREE.FBXLoader(); // Crea un cargador FBX
+    loader.load("./fbx_obj/fbx/fbxEva.fbx", function(obj) {
+      // console.log (obj); // Ver el objeto modelo devuelto después de cargar
+      scene.add(obj)
+      // Traducir correctamente la posición del modelo fbx
+      obj.translateY(-80);
+
+      // Puedes imprimir el objeto obj en la consola y encontrar el atributo de animaciones
+      console.log(obj)
+      // Ver datos de animación 2 objetos de clip AnimationClip, uno con animación de fotogramas clave, otro sin
+      console.log(obj.animations)
+
+      // obj se usa como parámetro para crear un mezclador para analizar y reproducir los datos de animación contenidos en obj y sus subobjetos
+      mixer = new THREE.AnimationMixer(obj);
+      // // Ver datos de animación
+      console.log(obj.animations)
+      obj.animations [0] // : Obtiene el clip del objeto clip
+      var AnimationAction = mixer.clipAction(obj.animations[0]);
+      AnimationAction.timeScale = 1; // El valor predeterminado es 1, puede ajustar la velocidad de reproducción
+      AnimationAction.loop = THREE.LoopOnce; // No hacer bucle
+      AnimationAction.clampWhenFinished = true; // Pausa en el último fotograma de la reproducción
+      AnimationAction.play(); // Reproducir animación
+    })
+  </script> -->
+</body>
+
+</html>
